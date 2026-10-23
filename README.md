@@ -67,7 +67,7 @@ scope3trace/
 
 The agents run in a fixed order over one shared state; there is no free-form conversation between them (Appendix F of the paper shows that free-form orchestration overwrites correct values). The LLM is restricted to bounded semantic tasks (page localization, table interpretation, relevance validation), while numeric parsing, unit normalization, category mapping and evidence checks are rule-based.
 
-### Figure 1 components in the code
+<!-- ### Figure 1 components in the code
 
 <div align="center">
 
@@ -85,7 +85,7 @@ The agents run in a fixed order over one shared state; there is no free-form con
 
 </div>
 
-Table reconstruction runs during the Search Agent's parsing, in the same pdfplumber page-layout pass that checks the visible page text; its output is attached to the Search Agent's verbatim evidence list and interpreted only by the Scope Agent.
+Table reconstruction runs during the Search Agent's parsing, in the same pdfplumber page-layout pass that checks the visible page text; its output is attached to the Search Agent's verbatim evidence list and interpreted only by the Scope Agent. -->
 
 ## Requirements
 
