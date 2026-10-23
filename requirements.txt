@@ -1,0 +1,11 @@
+# versions the code was developed and tested with (Python 3.10)
+pypdf==6.21.2
+pdfplumber==0.11.10
+pdfminer.six==20260107
+pypdfium2==5.14.0
+requests==2.34.2
+pandas==2.3.3
+# OCR of scanned pages and chart images (also needs the tesseract and poppler binaries)
+pytesseract==0.3.13
+pillow==12.3.0
+# optional: python-dotenv (a built-in reader loads .env without it)
