@@ -143,7 +143,6 @@ From an organization name: the Search Agent finds, downloads and checks the repo
 From local PDFs or a manifest (a CSV with a `local_path` column):
 
 ```bash
-python -m scope3trace.run_scope3trace --pdf report.pdf --org-name "Acme" --report-year 2024 -o out/acme
 python -m scope3trace.run_scope3trace --pdf-dir reports/ --model deepseek-chat -o out/run
 python -m scope3trace.run_scope3trace --manifest manifest.csv -o out/run
 ```
