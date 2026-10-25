@@ -114,7 +114,7 @@ OCR of scanned pages and chart images also needs the `tesseract` (4.1 or newer) 
 
 The Scope3Trace dataset has two linked levels (Section 3.2 of the paper). Organization-level records hold one organization and reporting year: Scope 1 and 2 totals, the Scope 3 total and its category breakdown, the reporting boundary, assurance status, and the evidence snippet of every value. Building-level records hold one building and year: physical attributes, geospatial coordinates, operational activity indicators and semantic metadata such as building type, with satellite imagery as supplementary multimodal context.
 
-The dataset, including the organization-level disclosures, the gold evaluation set (Appendix H of the paper) and the source report list, is released on Hugging Face (https://huggingface.co/datasets/Siyuan625/scope3trace).
+The dataset, including the organization-level disclosures, the gold evaluation set (Appendix H of the paper) and the source report list, is released on Hugging Face (https://huggingface.co/datasets/CRUISEResearchGroup/scope3trace/).
 
 ## Usage
 
