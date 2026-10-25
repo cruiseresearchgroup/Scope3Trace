@@ -140,11 +140,6 @@ Copy `.env.example` to `.env` and fill in the keys you need. Keys are read from 
 
 From an organization name: the Search Agent finds, downloads and checks the report, and the Scope and Verify Agents extract and verify its disclosures.
 
-```bash
-python -m scope3trace.run_scope3trace --search-org "Heineken N.V." --report-year 2025 \
-    --model deepseek-chat -o out/heineken_2025
-```
-
 From local PDFs or a manifest (a CSV with a `local_path` column):
 
 ```bash
@@ -153,7 +148,7 @@ python -m scope3trace.run_scope3trace --pdf-dir reports/ --model deepseek-chat -
 python -m scope3trace.run_scope3trace --manifest manifest.csv -o out/run
 ```
 
-- `--rule-only` turns off every LLM call of the three agents (the Rule-only baseline of Table 1); report search with `--search-org` still uses its search backend.
+- `--rule-only` turns off every LLM call of the three agents (the Rule-only baseline of Table 1).
 - `--search-model`, `--scope-model` and `--verify-model` give each agent its own backbone (Appendix E).
 - `--max-repair-rounds N` enables up to N Verify-driven repair rounds.
 - `--no-page-localization`, `--no-table-reconstruction` and `--no-evidence-grounding` are the ablations of Table 1.

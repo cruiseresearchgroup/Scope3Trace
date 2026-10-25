@@ -21,9 +21,6 @@ other's outputs; there is no open-ended agent dialogue anywhere.
 
 Usage examples
 --------------
-# Organization name -> report search -> extraction -> verification:
-python -m scope3trace.run_scope3trace --search-org "Heineken N.V." --report-year 2025 \
-    --model deepseek-chat -o out/heineken_2025
 
 # Local PDFs, Rule-only baseline (no API key needed):
 python -m scope3trace.run_scope3trace --pdf-dir reports/ --rule-only -o out/rule_only

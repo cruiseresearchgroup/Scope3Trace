@@ -198,8 +198,6 @@ def build_queries(org: str, year: Optional[int]) -> List[str]:
     return [re.sub(r"\s+", " ", t.format(org=org, year=y)).strip() for t in QUERY_TEMPLATES]
 
 
-# entity words that make a different legal entity ("Heineken Holding N.V." is
-# not "Heineken N.V."); they count only when the searched name lacks them
 _ENTITY_WORDS = ("holding", "holdings", "foundation", "stichting", "trust", "pension", "fund", "foundations")
 
 

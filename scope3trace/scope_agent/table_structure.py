@@ -177,8 +177,6 @@ def _resolve_relative_years(words, document_period_year=None):
 
 def _boundary(text):
     s = text.lower()
-    # "Munich Re Group Ambition 2025": a strategy or target named after the
-    # group does not make the table the consolidated group's disclosure
     s = re.sub(r"\bgroup\s+(?:ambition|strategy|targets?|programme|program|initiative)\b", " ", s)
     if re.search(r'non.financial indicators of|parent.company|standalone|company.only',s):
         return 'individual_entity'
@@ -1649,8 +1647,7 @@ _SUM_FIELDS = ('scope1', 'scope2', 'scope2_location', 'scope2_market', 'scope3_t
 def _apply_summation_aggregates(rows, cols):
     """A row that is the printed sum of its same-field siblings is their total.
 
-    Entity breakdowns ("Romania / Moldova / Italy / Total Sphera Group", or a
-    subsidiary column left of repeated "Scope 2 (location-based)" rows) give
+    Entity breakdowns give
     every row the same field. When one row equals the sum of the other rows
     of that field in every reported column where all of them are printed
     (two or more non-zero addends), that row is the aggregate and the others
